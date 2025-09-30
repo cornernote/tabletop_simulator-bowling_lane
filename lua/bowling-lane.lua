@@ -20,7 +20,7 @@ local Base = {
 }
 
 local AutoUpdate  = setmetatable({
-    version = "1.0.0",
+    version = "1.0.1",
     versionUrl = "https://raw.githubusercontent.com/cornernote/tabletop_simulator-bowling_lane/refs/heads/main/lua/bowling-lane.ver",
     scriptUrl = "https://raw.githubusercontent.com/cornernote/tabletop_simulator-bowling_lane/refs/heads/main/lua/bowling-lane.lua",
 
