@@ -1,0 +1,721 @@
+{
+  "SaveName": "bowling",
+  "EpochTime": 1759236909,
+  "Date": "9/30/2025 10:25:09 PM",
+  "VersionNumber": "v13.3",
+  "GameMode": "bowling",
+  "GameType": "",
+  "GameComplexity": "",
+  "Tags": [],
+  "Gravity": 0.5,
+  "PlayArea": 0.5,
+  "Table": "Table_RPG",
+  "Sky": "Sky_Forest",
+  "Note": "",
+  "TabStates": {
+    "0": {
+      "title": "Rules",
+      "body": "",
+      "color": "Grey",
+      "visibleColor": {
+        "r": 0.5,
+        "g": 0.5,
+        "b": 0.5
+      },
+      "id": 0
+    },
+    "1": {
+      "title": "White",
+      "body": "",
+      "color": "White",
+      "visibleColor": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0
+      },
+      "id": 1
+    },
+    "2": {
+      "title": "Brown",
+      "body": "",
+      "color": "Brown",
+      "visibleColor": {
+        "r": 0.443,
+        "g": 0.231,
+        "b": 0.09
+      },
+      "id": 2
+    },
+    "3": {
+      "title": "Red",
+      "body": "",
+      "color": "Red",
+      "visibleColor": {
+        "r": 0.856,
+        "g": 0.1,
+        "b": 0.094
+      },
+      "id": 3
+    },
+    "4": {
+      "title": "Orange",
+      "body": "",
+      "color": "Orange",
+      "visibleColor": {
+        "r": 0.956,
+        "g": 0.392,
+        "b": 0.113
+      },
+      "id": 4
+    },
+    "5": {
+      "title": "Yellow",
+      "body": "",
+      "color": "Yellow",
+      "visibleColor": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.172
+      },
+      "id": 5
+    },
+    "6": {
+      "title": "Green",
+      "body": "",
+      "color": "Green",
+      "visibleColor": {
+        "r": 0.192,
+        "g": 0.701,
+        "b": 0.168
+      },
+      "id": 6
+    },
+    "7": {
+      "title": "Blue",
+      "body": "",
+      "color": "Blue",
+      "visibleColor": {
+        "r": 0.118,
+        "g": 0.53,
+        "b": 1.0
+      },
+      "id": 7
+    },
+    "8": {
+      "title": "Teal",
+      "body": "",
+      "color": "Teal",
+      "visibleColor": {
+        "r": 0.129,
+        "g": 0.694,
+        "b": 0.607
+      },
+      "id": 8
+    },
+    "9": {
+      "title": "Purple",
+      "body": "",
+      "color": "Purple",
+      "visibleColor": {
+        "r": 0.627,
+        "g": 0.125,
+        "b": 0.941
+      },
+      "id": 9
+    },
+    "10": {
+      "title": "Pink",
+      "body": "",
+      "color": "Pink",
+      "visibleColor": {
+        "r": 0.96,
+        "g": 0.439,
+        "b": 0.807
+      },
+      "id": 10
+    },
+    "11": {
+      "title": "Black",
+      "body": "",
+      "color": "Black",
+      "visibleColor": {
+        "r": 0.25,
+        "g": 0.25,
+        "b": 0.25
+      },
+      "id": 11
+    }
+  },
+  "Grid": {
+    "Type": 0,
+    "Lines": false,
+    "Color": {
+      "r": 0.0,
+      "g": 0.0,
+      "b": 0.0
+    },
+    "Opacity": 0.75,
+    "ThickLines": false,
+    "Snapping": false,
+    "Offset": false,
+    "BothSnapping": false,
+    "xSize": 2.0,
+    "ySize": 2.0,
+    "PosOffset": {
+      "x": 0.0,
+      "y": 1.0,
+      "z": 0.0
+    }
+  },
+  "Lighting": {
+    "LightIntensity": 0.54,
+    "LightColor": {
+      "r": 1.0,
+      "g": 0.9804,
+      "b": 0.8902
+    },
+    "AmbientIntensity": 1.3,
+    "AmbientType": 0,
+    "AmbientSkyColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientEquatorColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "AmbientGroundColor": {
+      "r": 0.5,
+      "g": 0.5,
+      "b": 0.5
+    },
+    "ReflectionIntensity": 1.0,
+    "LutIndex": 0,
+    "LutContribution": 1.0
+  },
+  "Hands": {
+    "Enable": true,
+    "DisableUnused": false,
+    "Hiding": 0
+  },
+  "ComponentTags": {
+    "labels": []
+  },
+  "Turns": {
+    "Enable": false,
+    "Type": 0,
+    "TurnOrder": [],
+    "Reverse": false,
+    "SkipEmpty": false,
+    "DisableInteractions": false,
+    "PassTurns": true,
+    "TurnColor": ""
+  },
+  "DecalPallet": [],
+  "LuaScript": "--[[ Lua code. See documentation: https://api.tabletopsimulator.com/ --]]\n\n--[[ The onLoad event is called after the game save finishes loading. --]]\nfunction onLoad()\n    --[[ print('onLoad!') --]]\nend\n\n--[[ The onUpdate event is called once per frame. --]]\nfunction onUpdate()\n    --[[ print('onUpdate loop!') --]]\nend",
+  "LuaScriptState": "",
+  "XmlUI": "<!-- Xml UI. See documentation: https://api.tabletopsimulator.com/ui/introUI/ -->",
+  "ObjectStates": [
+    {
+      "GUID": "e9290a",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": -15.1107731,
+        "posY": 4.81034231,
+        "posZ": -20.1076221,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 11.7719851,
+        "scaleY": 9.174497,
+        "scaleZ": 4.871238
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.856,
+        "g": 0.09999997,
+        "b": 0.09399996,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Red",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "8794fe",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": -30.2150211,
+        "posY": 4.81034231,
+        "posZ": 10.17524,
+        "rotX": 0.0,
+        "rotY": 90.0,
+        "rotZ": 0.0,
+        "scaleX": 11.6554289,
+        "scaleY": 9.174497,
+        "scaleZ": 4.91995144
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.905,
+        "g": 0.898,
+        "b": 0.171999961,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Yellow",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "7d944b",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 30.2511711,
+        "posY": 4.81034231,
+        "posZ": 9.59069252,
+        "rotX": 0.0,
+        "rotY": 270.0,
+        "rotZ": 0.0,
+        "scaleX": 11.6554213,
+        "scaleY": 9.174497,
+        "scaleZ": 4.91995144
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.627,
+        "g": 0.124999978,
+        "b": 0.941,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Purple",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "81eb63",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 15.4749184,
+        "posY": 4.81034231,
+        "posZ": 19.8365288,
+        "rotX": 0.0,
+        "rotY": 179.8,
+        "rotZ": 0.0,
+        "scaleX": 11.7719746,
+        "scaleY": 9.174497,
+        "scaleZ": 4.87124
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.117999978,
+        "g": 0.53,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Blue",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "633fc6",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 15.1961212,
+        "posY": 4.81034231,
+        "posZ": -20.1400986,
+        "rotX": 0.0,
+        "rotY": 0.0,
+        "rotZ": 0.0,
+        "scaleX": 11.7719707,
+        "scaleY": 9.174499,
+        "scaleZ": 4.871238
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 1.0,
+        "g": 1.0,
+        "b": 1.0,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "White",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "d13f51",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": -15.1927719,
+        "posY": 4.81034231,
+        "posZ": 19.787817,
+        "rotX": 0.0,
+        "rotY": 180.0,
+        "rotZ": 0.0,
+        "scaleX": 11.7719707,
+        "scaleY": 9.174497,
+        "scaleZ": 4.871238
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.191999972,
+        "g": 0.701,
+        "b": 0.167999953,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Green",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "30e051",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": 30.1035728,
+        "posY": 4.81034231,
+        "posZ": -8.449126,
+        "rotX": 0.0,
+        "rotY": 270.0,
+        "rotZ": 0.0,
+        "scaleX": 11.6554184,
+        "scaleY": 9.174497,
+        "scaleZ": 4.91995144
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.96,
+        "g": 0.438999981,
+        "b": 0.807,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Pink",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "0daf75",
+      "Name": "HandTrigger",
+      "Transform": {
+        "posX": -30.247818,
+        "posY": 4.81034231,
+        "posZ": -8.822588,
+        "rotX": 0.0,
+        "rotY": 90.0,
+        "rotZ": 0.0,
+        "scaleX": 11.6554317,
+        "scaleY": 9.174497,
+        "scaleZ": 4.91995144
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.9559999,
+        "g": 0.39199996,
+        "b": 0.112999953,
+        "a": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": true,
+      "Grid": false,
+      "Snap": true,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": true,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "FogColor": "Orange",
+      "LuaScript": "",
+      "LuaScriptState": "",
+      "XmlUI": ""
+    },
+    {
+      "GUID": "1e839a",
+      "Name": "Custom_Board",
+      "Transform": {
+        "posX": 0.9242502,
+        "posY": 1.01883459,
+        "posZ": -0.0222797655,
+        "rotX": -1.56755289E-06,
+        "rotY": 179.9987,
+        "rotZ": 2.95243776E-08,
+        "scaleX": 1.0,
+        "scaleY": 1.0,
+        "scaleZ": 1.0
+      },
+      "Nickname": "",
+      "Description": "",
+      "GMNotes": "",
+      "AltLookAngle": {
+        "x": 0.0,
+        "y": 0.0,
+        "z": 0.0
+      },
+      "ColorDiffuse": {
+        "r": 0.0,
+        "g": 0.0,
+        "b": 0.0
+      },
+      "LayoutGroupSortIndex": 0,
+      "Value": 0,
+      "Locked": false,
+      "Grid": false,
+      "Snap": false,
+      "IgnoreFoW": false,
+      "MeasureMovement": false,
+      "DragSelectable": false,
+      "Autoraise": true,
+      "Sticky": true,
+      "Tooltip": true,
+      "GridProjection": false,
+      "HideWhenFaceDown": false,
+      "Hands": false,
+      "CustomImage": {
+        "ImageURL": "https://www.dropbox.com/s/s60oqg7shs6lwk4/bdBowlg.jpg?dl=1",
+        "ImageSecondaryURL": "",
+        "ImageScalar": 1.0,
+        "WidthScale": 0.323809534
+      },
+      "LuaScript": "local Base = {\r\n    name = \"Bowling Lane\",\r\n    debug = false,\r\n    host = self,\r\n    print = function(self, message)\r\n        print(self.name .. \": \" .. message)\r\n    end,\r\n    error = function(self, message)\r\n        if self.debug then\r\n            error(self.name .. \": \" .. message)\r\n        end\r\n    end,\r\n    reload = function(self)\r\n        Wait.condition(function()\r\n            return not self.host or self.host.reload()\r\n        end, function()\r\n            return not self.host or self.host.resting\r\n        end)\r\n    end\r\n}\r\n\r\nlocal AutoUpdate  = setmetatable({\r\n    version = \"1.0.0\",\r\n    versionUrl = \"https://raw.githubusercontent.com/cornernote/tabletop_simulator-bowling_lane/refs/heads/main/lua/bowling-lane.ver\",\r\n    scriptUrl = \"https://raw.githubusercontent.com/cornernote/tabletop_simulator-bowling_lane/refs/heads/main/lua/bowling-lane.lua\",\r\n\r\n    run = function(self)\r\n        WebRequest.get(self.versionUrl, function(request)\r\n            if request.response_code ~= 200 then\r\n                self:error(\"Failed to check version (\" .. request.response_code .. \": \" .. request.error .. \")\")\r\n                return\r\n            end\r\n            local remoteVersion = request.text:match(\"[^\\r\\n]+\") or \"\"\r\n            if self:isNewerVersion(remoteVersion) then\r\n                self:fetchNewScript(remoteVersion)\r\n            end\r\n        end)\r\n    end,\r\n    isNewerVersion = function(self, remoteVersion)\r\n        local function split(v)\r\n            return { v:match(\"^(%d+)%.?(%d*)%.?(%d*)\") or 0 }\r\n        end\r\n        local r, l = split(remoteVersion), split(self.version)\r\n        for i = 1, math.max(#r, #l) do\r\n            local rv, lv = tonumber(r[i]) or 0, tonumber(l[i]) or 0\r\n            if rv ~= lv then\r\n                return rv > lv\r\n            end\r\n        end\r\n        return false\r\n    end,\r\n    fetchNewScript = function(self, newVersion)\r\n        WebRequest.get(self.scriptUrl, function(request)\r\n            if request.response_code ~= 200 then\r\n                self:error(\"Failed to fetch new script (\" .. request.response_code .. \": \" .. request.error .. \")\")\r\n                return\r\n            end\r\n            if request.text and #request.text > 0 then\r\n                self.host.setLuaScript(request.text)\r\n                self:print(\"Updated to version \" .. newVersion)\r\n                self:reload()\r\n            else\r\n                self:error(\"New script is empty\")\r\n            end\r\n        end)\r\n    end,\r\n}, { __index = Base })\r\n\r\nfunction onLoad()\r\n    self.createButton({\r\n        label = \"Spawn Pins\",\r\n        click_function = \"spawnPins\",\r\n        function_owner = self,\r\n        position = { 0, 0.1, 9.3 },\r\n        rotation = { 0, 0, 0 },\r\n        scale = { 3, 1, 1 },\r\n        width = 2000,\r\n        height = 300,\r\n        font_size = 200,\r\n    })\r\n\r\n    AutoUpdate:run()\r\nend\r\n\r\nfunction spawnPins()\r\n    local snaps = self.getSnapPoints()\r\n    if not snaps or #snaps == 0 then\r\n        print(\"No snap points found on board!\")\r\n        return\r\n    end\r\n\r\n    local rescale = { ball = 1.5, pin = 1.1 }\r\n    local scale = self.getScale()\r\n\r\n    local ballPositions = {\r\n        { -11, 1, 7 },\r\n        { -11, 1, 8 },\r\n    }\r\n\r\n    for _, ballPosition in ipairs(ballPositions) do\r\n        spawnObject({\r\n            type = \"Metal Ball\",\r\n            position = self.positionToWorld(ballPosition),\r\n            scale = { scale.x * rescale.ball, scale.y * rescale.ball, scale.z * rescale.ball },\r\n            callback_function = function(obj)\r\n                obj.setColorTint({ math.random(), math.random(), math.random() })\r\n            end\r\n        })\r\n    end\r\n\r\n    for _, snap in ipairs(snaps) do\r\n        spawnObject({\r\n            type = \"Custom_Model\",\r\n            position = self.positionToWorld(snap.position),\r\n            scale = { scale.x * rescale.pin, scale.y * rescale.pin, scale.z * rescale.pin },\r\n            use_snap_points = true,\r\n        }).setCustomObject({\r\n            type = 1,\r\n            material = 1,\r\n            mesh = \"https://steamusercontent-a.akamaihd.net/ugc/1491209074614740757/3BBB5FA45409A0723A9662E53EB4D1A2E09DD727/\",\r\n            diffuse = \"https://steamusercontent-a.akamaihd.net/ugc/1491209074614215657/4A01683186B1A6E49A2E7558EA9006ABDEE7DF2E/\",\r\n            collider = \"https://steamusercontent-a.akamaihd.net/ugc/1491209074614740523/6027BD9A9B84B4E3F9C58AF517CB2277619F423B/\",\r\n        })\r\n    end\r\nend\r\n",
+      "LuaScriptState": "",
+      "XmlUI": "",
+      "AttachedSnapPoints": [
+        {
+          "Position": {
+            "x": 4.79273462,
+            "y": 0.592240751,
+            "z": -7.605207
+          }
+        },
+        {
+          "Position": {
+            "x": 1.43449879,
+            "y": 0.5922408,
+            "z": -7.61547041
+          }
+        },
+        {
+          "Position": {
+            "x": -1.65876222,
+            "y": 0.5922408,
+            "z": -7.61440134
+          }
+        },
+        {
+          "Position": {
+            "x": -4.91183138,
+            "y": 0.5922401,
+            "z": -7.64758158
+          }
+        },
+        {
+          "Position": {
+            "x": -3.30970287,
+            "y": 0.592240751,
+            "z": -6.93525457
+          }
+        },
+        {
+          "Position": {
+            "x": -0.118057184,
+            "y": 0.592241049,
+            "z": -6.9363656
+          }
+        },
+        {
+          "Position": {
+            "x": -1.57496083,
+            "y": 0.592241,
+            "z": -6.232226
+          }
+        },
+        {
+          "Position": {
+            "x": 3.37359214,
+            "y": 0.592241,
+            "z": -6.96601963
+          }
+        },
+        {
+          "Position": {
+            "x": 1.41526,
+            "y": 0.592241,
+            "z": -6.23325348
+          }
+        },
+        {
+          "Position": {
+            "x": -0.00700582564,
+            "y": 0.592240751,
+            "z": -5.600221
+          }
+        }
+      ]
+    }
+  ]
+}
