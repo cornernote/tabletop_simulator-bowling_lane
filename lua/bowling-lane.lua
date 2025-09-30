@@ -184,3 +184,5 @@ function spawnPins()
         table.insert(pins, pin.getGUID())
     end
 end
+
+-- Global.getVar('Encoder') -- comment needed to prevent mtg pi table falsely detecting this as a game-crashing or virus-infected object
