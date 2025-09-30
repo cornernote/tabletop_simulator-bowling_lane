@@ -1,0 +1,46 @@
+[h1]Automated Bowling Lane[/h1]
+
+A fully scripted bowling lane for Tabletop Simulator!
+
+Spawn pins and balls with a single button, knock the pins down, and watch them despawn automatically.
+
+Balls will also clean themselves up when they fall off the board or drop lower than their last resting point.
+
+Perfect for quick games of bowling with friends.
+
+[h2]=== FEATURES ===[/h2]
+
+[list]
+[*] One-click setup - spawns both pins and balls
+[*] Pins automatically despawn when knocked over
+[*] Balls despawn when they roll off or drop below their last height
+[*] Cleanup functions ensure a fresh lane every time
+[*] Randomized ball colors for variety
+[/list]
+
+[h2]=== HOW TO USE ===[/h2]
+
+[list]
+[*] Press the [b]Setup Lane[/b] button to spawn pins and balls
+[*] Roll the balls to knock down pins
+[*] Pins disappear when tipped over
+[*] Balls vanish when they fall off the lane
+[*] Press [b]Setup Lane[/b] again for a full reset
+[/list]
+
+[h2]=== CREDITS AND THANKS ===[/h2]
+
+[b]Built with scripting and assets by:[/b]
+
+[list]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=330964201]Tabletop Bowling by Riddix[/url]
+[*] [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1726598661]Bowling Pin by Frisbeepboop[/url]
+[/list]
+
+Big [b]thanks[/b] to everyone who shares their assets and tools - this lane wouldn't be possible without your work.
+
+[h2]=== RESOURCES ===[/h2]
+
+[list]
+[*] [url=https://github.com/cornernote/tabletop_simulator-bowling_lane]Some assets and a copy of the savegame on GitHub[/url]
+[/list]

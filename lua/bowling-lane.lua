@@ -66,10 +66,13 @@ local AutoUpdate  = setmetatable({
     end,
 }, { __index = Base })
 
+local pins = { }
+local balls = { }
+
 function onLoad()
     self.createButton({
-        label = "Spawn Pins",
-        click_function = "spawnPins",
+        label = "Setup Lane",
+        click_function = "setupLane",
         function_owner = self,
         position = { 0, 0.1, 9.3 },
         rotation = { 0, 0, 0 },
@@ -82,44 +85,102 @@ function onLoad()
     AutoUpdate:run()
 end
 
-function spawnPins()
-    local snaps = self.getSnapPoints()
-    if not snaps or #snaps == 0 then
-        print("No snap points found on board!")
-        return
+function setupLane()
+    cleanupPins()
+    cleanupBalls()
+    spawnPins()
+    spawnBalls()
+end
+
+function cleanupPins()
+    for i = #pins, 1, -1 do
+        local obj = getObjectFromGUID(pins[i])
+        if obj then
+            destroyObject(obj)
+        end
     end
+    pins = {}
+end
 
-    local rescale = { ball = 1.5, pin = 1.1 }
+function cleanupBalls()
+    for i = #balls, 1, -1 do
+        local obj = getObjectFromGUID(balls[i])
+        if obj then
+            destroyObject(obj)
+        end
+    end
+    balls = {}
+end
+
+function spawnBalls()
+    local rescale = 1.5
     local scale = self.getScale()
-
     local ballPositions = {
         { -11, 1, 7 },
         { -11, 1, 8 },
     }
 
     for _, ballPosition in ipairs(ballPositions) do
-        spawnObject({
+        local ball = spawnObject({
             type = "Metal Ball",
             position = self.positionToWorld(ballPosition),
-            scale = { scale.x * rescale.ball, scale.y * rescale.ball, scale.z * rescale.ball },
-            callback_function = function(obj)
-                obj.setColorTint({ math.random(), math.random(), math.random() })
+            scale = { scale.x * rescale, scale.y * rescale, scale.z * rescale },
+            callback_function = function(ball)
+                ball.setColorTint({ math.random(), math.random(), math.random() })
+                ball.setLuaScript([[
+                    local dropPosY = nil
+                    function onDropped()
+                        local pos = self.getPosition()
+                        Wait.time(function()
+                            dropPosY = self.getPosition().y
+                        end, 0.2)
+                    end
+                    function onUpdate()
+                        if dropPosY and self.getPosition().y < dropPosY - 0.1 then
+                            Wait.time(function()
+                                destroyObject(self)
+                            end, 1)
+                        end
+                    end
+                ]])
             end
         })
+
+        table.insert(balls, ball.getGUID())
     end
+end
+
+function spawnPins()
+    local rescale = 1.1
+    local scale = self.getScale()
+    local snaps = self.getSnapPoints()
 
     for _, snap in ipairs(snaps) do
-        spawnObject({
+        local pin = spawnObject({
             type = "Custom_Model",
             position = self.positionToWorld(snap.position),
-            scale = { scale.x * rescale.pin, scale.y * rescale.pin, scale.z * rescale.pin },
+            scale = { scale.x * rescale, scale.y * rescale, scale.z * rescale },
             use_snap_points = true,
-        }).setCustomObject({
+        })
+
+        pin.setCustomObject({
             type = 1,
             material = 1,
             mesh = "https://steamusercontent-a.akamaihd.net/ugc/1491209074614740757/3BBB5FA45409A0723A9662E53EB4D1A2E09DD727/",
             diffuse = "https://steamusercontent-a.akamaihd.net/ugc/1491209074614215657/4A01683186B1A6E49A2E7558EA9006ABDEE7DF2E/",
             collider = "https://steamusercontent-a.akamaihd.net/ugc/1491209074614740523/6027BD9A9B84B4E3F9C58AF517CB2277619F423B/",
         })
+
+        pin.setLuaScript([[
+            function onUpdate()
+                if math.abs(self.getTransformUp().y) < 0.8 then
+                    Wait.time(function()
+                        destroyObject(self)
+                    end, 1)
+                end
+            end
+        ]])
+
+        table.insert(pins, pin.getGUID())
     end
 end
