@@ -20,7 +20,7 @@ local Base = {
 }
 
 local AutoUpdate  = setmetatable({
-    version = "1.0.1",
+    version = "1.0.2",
     versionUrl = "https://raw.githubusercontent.com/cornernote/tabletop_simulator-bowling_lane/refs/heads/main/lua/bowling-lane.ver",
     scriptUrl = "https://raw.githubusercontent.com/cornernote/tabletop_simulator-bowling_lane/refs/heads/main/lua/bowling-lane.lua",
 
@@ -133,7 +133,7 @@ function spawnBalls()
                         local pos = self.getPosition()
                         Wait.time(function()
                             dropPosY = self.getPosition().y
-                        end, 0.2)
+                        end, 0.5)
                     end
                     function onUpdate()
                         if dropPosY and self.getPosition().y < dropPosY - 0.1 then
